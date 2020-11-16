@@ -6,6 +6,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # reading the data from the preprocessed .csv file
 data = pd.read_csv('data.csv')
+
+data.isnull().sum(axis=0)
+
 data['actor_1_name']=data['actor_1_name'].str.lower()
 data['actor_2_name']=data['actor_2_name'].str.lower()
 data['actor_3_name']=data['actor_3_name'].str.lower()
@@ -29,3 +32,6 @@ np.save('similarity_matrix', sim)
 
 # saving dataframe to csv for later use in main file
 data.to_csv('data.csv',index=False)
+
+
+
