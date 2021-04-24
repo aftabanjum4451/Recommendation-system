@@ -25,3 +25,6 @@ This is a hollywood movie recommender system built with Python. I used IMDB 5000
 – It increases revenues for business through increased consumption
 
 
+# Deployment
+This is a mini project that I worked on, the project is about movie recommendation system. The system will be returned 10 most relevant search result according to the search query. The project is also deployed on the Heroku platform and the Api of this project is given below:
+(https://recommended-system.herokuapp.com/)
